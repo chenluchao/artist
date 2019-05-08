@@ -1,0 +1,47 @@
+<!--pages/clc_home/clc_home.wxml-->
+<view class="page">
+	<swiper class="swiper" indicator-dots="true" autoplay="true" circular="true" indicator-active-color="#fff">
+		<block wx:for="{{ads}}" wx:key="{{index}}">
+			<swiper-item class="swiper-item">
+				<navigator hover-class="none" url="{{homeDetailUrl+'?id='+item.id}}">
+					<image src="{{item.image}}" class="slide-image" />
+				</navigator>
+				<view class="top-title">{{item.title}}</view>
+			</swiper-item>
+		</block>
+	</swiper>
+	<scroll-view class="new-box" scroll-y="true">
+		<view class="new-title">今日新闻</view>
+		<view wx:for="{{list}}" wx:key="{{index}}">
+			<navigator hover-class="none" url="{{homeDetailUrl+'?id='+item.id}}">
+				<view class="new-item">
+					<view class="item-title">
+						{{item.title}}
+					</view>
+					<view class="item-img">
+						<image src="{{item.images}}"></image>
+					</view>
+				</view>
+			</navigator>
+		</view>
+	</scroll-view>
+	<scroll-view class="new-box" scroll-y="true">
+		<view class="datalist" wx:for="{{datalist}}" wx:key="{{index}}">
+			<view class="new-title">{{item.date}}</view>
+			<view wx:for="{{item.stories}}" wx:for-item="dataItem" wx:for-index="dataIndex" wx:key="{{dataIndex}}">
+				<navigator hover-class="none" url="{{homeDetailUrl+'?id='+dataItem.id}}">
+					<view class="new-item">
+						<view class="item-title">
+							{{dataItem.title}}
+						</view>
+						<view class="item-img">
+							<image src="{{dataItem.images}}"></image>
+						</view>
+					</view>
+				</navigator>
+			</view>
+		</view>
+		<view class="more" bindtap="clc_downloadMore">点击加载更多</view>
+	</scroll-view>
+</view>
+

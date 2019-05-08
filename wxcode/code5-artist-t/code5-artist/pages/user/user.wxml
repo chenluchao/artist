@@ -1,0 +1,50 @@
+<!--pages/user/user.wxml-->
+<!-- <text>pages/user/user.wxml</text> -->
+
+
+<view class="top">
+	<image src="/res/img/default_indi_bg.png"></image>
+	<image class='head-image'  src="{{headImage}}"></image>
+	<view class='username'>{{username}}</view>
+</view>
+
+<view class="tableview">
+
+	<view class='section'>
+		<view class='section-title'>
+			收藏
+		</view>
+		<view class="cell" bindtap='dealShowRead'>
+			<image src="/res/img/read.png"></image>
+			<text>阅读</text>
+		</view>
+		<view class="cell">
+			<image src="/res/img/music.png"></image>
+			<text>音乐</text>
+		</view>
+		<view class="cell">
+			<image src="/res/img/movie.png"></image>
+			<text>影视</text>
+		</view>
+	</view>
+
+	<view class='section'>
+		<view class="cell">
+			<image src="/res/img/center_feedback.png"></image>
+			<text>系统设置</text>
+		</view>
+		<view class="cell" bindtap='dealShowUserInfo'>
+			<image src="/res/img/user2.png"></image>
+			<text>个人设置</text>
+		</view>
+	</view>
+
+	<view class='section'>
+		<view class="cell">
+			<image src="/res/img/aliwx_reply_bar_close_normal.png"></image>
+			<text bindtap="dealLogout">退出登录</text>
+		</view>
+	</view>
+
+
+</view>

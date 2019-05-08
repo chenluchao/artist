@@ -1,0 +1,99 @@
+/* pages/homework/homework.wxss */
+.page{
+	width: 100%;
+	color: #545454;
+	font-size: 26rpx;
+	overflow: hidden;
+}
+.nav{
+	width: 100%;
+	height: 54rpx;
+	background-color: #fff;
+	padding-top: 7rpx;
+	display: flex;
+	box-sizing: border-box;
+}
+.navimg{
+	width: 40rpx;
+	height: 40rpx;
+	margin-left: 20rpx;
+}
+.navimg image{
+	width: 100%;
+	height: 100%;
+}
+.more{
+	margin-left: 66%;
+}
+.con{
+	position: relative;
+}
+.swiperbox{
+	width: 100%;
+	height: 365rpx;
+}
+.wx-swiper-dots{
+	margin-left: 23%;
+}
+.slide-image{
+	width: 100%;
+	height: 100%;
+}
+.imgtitle{
+	padding-left: 15rpx;
+	color: #767676;
+	font-size: 25rpx;
+	line-height: 54rpx;
+	width: 100%;
+	height: 54rpx;
+	background: rgba(20,20,20,.6);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.imgtitlecon{
+	width: 60%;
+}
+.list{
+	background-color: #AAAAAA;
+	position: absolute;
+	left: 0;
+	top: 419rpx;
+	width: 100%;
+	max-height: 730rpx;
+	overflow-y: scroll;
+}
+.list::-webkit-scrollbar{
+	width: 0;
+	height: 0;
+	color: transparent;
+}
+.item-box{
+	padding: 15rpx 0 15rpx 5rpx;
+	display: flex;
+	border-bottom: 2rpx solid #525252;
+	box-sizing: border-box;
+	width: 100%;
+	height: 140rpx;
+}
+.imgbox{
+	width: 110rpx;
+	height: 110rpx;
+}
+.imgbox image{
+	width: 100%;
+	height: 100%;
+}
+.conbox{
+	width: 505rpx;
+	margin-left: 30rpx;
+	font-weight: bold;
+}
+.line-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.conbox view{
+	line-height: 39rpx;
+}

@@ -1,0 +1,72 @@
+{
+	"pages": [
+
+		
+		
+
+		"pages/home/home",
+		"pages/read/read",
+		"pages/music/music",
+		"pages/movie/movie",
+		
+		"pages/musicDetail/musicDetail",
+		"pages/movieDetail/movieDetail",
+		"pages/readDetail/readDetail",
+
+		"pages/search/search",
+		"pages/readCollect/readCollect",
+
+		
+		
+		
+		"pages/comment/comment",
+		
+
+		"pages/login/login",
+		"pages/reg/reg",
+		"pages/user/user",
+		"pages/userInfo/userInfo",
+				
+		
+		
+
+		"pages/index/index",
+		"pages/logs/logs"
+
+	],
+	"tabBar": {
+		"selectedColor": "#888",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "/res/img/main.png",
+				"selectedIconPath": "/res/img/main_active.png"
+			},
+			{
+				"pagePath": "pages/read/read",
+				"text": "阅读",
+				"iconPath": "/res/img/read.png",
+				"selectedIconPath": "/res/img/read_active.png"
+			},
+			{
+				"pagePath": "pages/music/music",
+				"text": "音乐",
+				"iconPath": "/res/img/music.png",
+				"selectedIconPath": "/res/img/music_active.png"
+			},
+			{
+				"pagePath": "pages/movie/movie",
+				"text": "影视",
+				"iconPath": "/res/img/movie.png",
+				"selectedIconPath": "/res/img/movie_active.png"
+			}
+		]
+	},
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "文艺范",
+		"navigationBarTextStyle": "black"
+	}
+}

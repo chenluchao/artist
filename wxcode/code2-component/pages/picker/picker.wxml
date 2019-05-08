@@ -1,0 +1,12 @@
+<!--pages/picker/picker.wxml-->
+<text>pages/picker/picker.wxml</text>
+
+<view>
+
+<picker value="{{index}}" range='{{educations}}' bindchange="dealChange">
+
+	选择学历: {{educations[index]}}
+
+</picker>	
+
+</view>

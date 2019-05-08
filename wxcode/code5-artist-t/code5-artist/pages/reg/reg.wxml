@@ -1,0 +1,14 @@
+<!--pages/reg/reg.wxml-->
+
+
+<view class="page">
+	<view class="input-area">
+		<input class="input-item" value="{{username}}" bindinput="dealInput" id="username" placeholder='请输入用户名'></input>
+		<input class="input-item" value="{{password}}" bindinput="dealInput" id="password" placeholder='请输入密码' password='true'></input>
+		<input class="input-item" value="{{repeatPassword}}" bindinput="dealInput" id="repeatPassword" placeholder='请输入重复密码' password='true'></input>
+		<input class="input-item" value="{{phone}}" bindinput="dealInput" id="phone" placeholder='请输入手机号'></input>
+		<button class="button-item"  bindtap="dealReg">注册</button>
+	</view>
+
+
+</view>

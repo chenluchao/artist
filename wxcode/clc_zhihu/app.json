@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/clc_home/clc_home",
+    "pages/clc_list/clc_list",
+    "pages/clc_listDetail/clc_listDetail",
+    "pages/clc_homeDetail/clc_homeDetail",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+	"tabBar":{
+			  "selectedColor":"#19b40a",
+			  "list":[
+				  {
+					  "pagePath":"pages/clc_home/clc_home",
+					  "text":"主页",
+					  "iconPath":"/images/icon_API.png",
+					  "selectedIconPath":"/images/icon_API_HL.png"
+				  },
+				{
+					"pagePath": "pages/clc_list/clc_list",
+					"text": "主题日报",
+					"iconPath": "/images/icon_component.png",
+					"selectedIconPath": "/images/icon_component_HL.png"
+				}]
+		},
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#008de8",
+    "navigationBarTitleText": "知乎",
+    "navigationBarTextStyle":"white"
+  }
+}

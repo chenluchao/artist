@@ -1,0 +1,51 @@
+/* pages/bookDetail/bookDetail.wxss */
+.item{
+	height: 300rpx;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+.img{
+	position: absolute;
+	left: 30rpx;
+	top: 30rpx;
+	width: 240rpx;
+	height: 240rpx;
+}
+.name{
+	position: absolute;
+	left: 300rpx;
+	top: 30rpx;
+}
+.author{
+	position: absolute;
+	left: 300rpx;
+	top: 100rpx;
+	font-size: 14px;
+	color: #aaa;
+}
+.publisher{
+	position: absolute;
+	left: 300rpx;
+	top: 160rpx;
+	font-size: 14px;
+	color: #aaa;
+}
+.price{
+	position: absolute;
+	left: 300rpx;
+	top: 230rpx;
+	font-size: 14px;
+	color: #aaa;
+}
+.price-num{
+	color: red;
+	font-size: 24px;
+}
+.section{
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.section-content{
+	font-size: 14px;
+	color: #888;
+}

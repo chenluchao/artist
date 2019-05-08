@@ -1,0 +1,29 @@
+/* pages/login/login.wxss */
+
+
+.input-area{
+	padding: 10px;
+}
+.input-item{
+	box-sizing: border-box;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding-left: 10px;
+	height: 46px;
+}
+
+page{
+	height: 100%;
+	background-color: #fafafa;
+}
+
+.link-area{
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+	color: #888;
+	font-size: 13px;
+}

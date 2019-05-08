@@ -1,0 +1,18 @@
+<!--pages/clc_list/clc_list.wxml-->
+<view class="page">
+	<view class="nav">主题日报</view>
+	<scroll-view class="new-box" scroll-y="true">
+		<view wx:for="{{list}}" wx:key="{{index}}">
+			<navigator hover-class="none" url="{{listDetailUrl+'?url='+item.url}}">
+				<view class="new-item">
+					<view class="item-title">
+						{{item.title}}
+					</view>
+					<view class="item-img">
+						<image src="{{item.thumbnail}}"></image>
+					</view>
+				</view>
+			</navigator>
+		</view>
+	</scroll-view>
+</view>

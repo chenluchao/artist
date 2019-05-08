@@ -1,0 +1,10 @@
+<!--pages/network/network.wxml-->
+<text>pages/network/network.wxml</text>
+
+<view>
+网络类型: {{networkType}}
+</view>
+
+<view>
+是否联网: {{isConnected}}
+</view>

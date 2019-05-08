@@ -1,0 +1,11 @@
+<!--pages/navigator/a.wxml-->
+<text>pages/navigator/a.wxml</text>
+
+<!-- navigator -->
+<view>
+<navigator url="/pages/navigator/b">bbb</navigator>
+</view>
+
+<view>
+<button bindtap="dealTap">BBB</button>
+</view>

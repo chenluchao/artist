@@ -1,0 +1,49 @@
+/* pages/userInfo/userInfo.wxss */
+
+.head-image-cell{
+	height: 60px;
+	line-height: 60px;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+
+.head-image{
+	width: 50px;
+	height: 50px;
+
+	position: absolute;
+	right: 20px;
+	top:5px;
+
+	border-radius: 50%;
+}
+
+.head-text{
+	position: absolute;
+	top: 00px;
+	left: 20px;
+	color: #aaa;
+}
+
+
+/* box */
+.select-image-box{
+	height: 300px;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	border-top:1px solid #aaa;
+	text-align: center;
+
+	background-color: rgba(200,200,200,0.2)
+}
+
+.select-image-box image{
+	width: 180px;
+	height: 180px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 50%;
+}

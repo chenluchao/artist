@@ -1,0 +1,25 @@
+<!--pages/bookDetail/bookDetail.wxml-->
+<!-- <text>pages/bookDetail/bookDetail.wxml</text> -->
+
+<view class="item" >
+		
+	<image class="img" src="{{item.image?imagePrefix+item.image:''}}"></image>
+	<text class="name">{{item.name}}</text>
+	<text class="author">作者: {{item.author}}</text>
+	<text class="publisher">出版商: {{item.publisher}}</text>
+	<text class="price">价格: <text class="price-num">{{item.price}}</text></text>
+		
+</view>
+<view class="section">
+	<view class="section-title">
+	简介
+	</view>
+	<view class="section-content">{{item.introduce}}</view>
+</view>
+
+<view class="section">
+	<view class="section-title">
+	作者简介
+	</view>
+	<view class="section-content">{{item.author_intro}}</view>
+</view>

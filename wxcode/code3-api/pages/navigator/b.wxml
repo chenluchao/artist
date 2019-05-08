@@ -1,0 +1,7 @@
+<!--pages/navigator/b.wxml-->
+<text>pages/navigator/b.wxml</text>
+
+
+<view>
+<button bindtap="dealTap">Back</button>
+</view>

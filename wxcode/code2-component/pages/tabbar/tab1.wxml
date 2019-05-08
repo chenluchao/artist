@@ -1,0 +1,7 @@
+<!--pages/tabbar/tab1.wxml-->
+<text>pages/tabbar/tab1.wxml</text>
+
+
+<view>
+	switchTab跳转: <navigator url="/pages/tabbar/tab2" open-type='switchTab'> Tab2 </navigator>	
+</view>

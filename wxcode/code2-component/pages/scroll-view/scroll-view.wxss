@@ -1,0 +1,59 @@
+/* pages/scroll-view/scroll-view.wxss */
+
+.box{
+	/* display: flex; */
+	width: 100%;
+	height: 300rpx;
+	background-color: lightgray;
+	/* flex-direction: column; */
+
+	/* justify-content: space-around; */
+	overflow-y: auto;
+}
+
+.s1{
+
+	height: 200rpx;
+	background-color: lightblue;
+	box-sizing: border-box;
+	border: 1px solid black;
+
+}
+
+.s2{
+	height: 200rpx;
+	background-color: lightcoral;
+	box-sizing: border-box;
+	border: 1px solid black;
+
+}
+
+.s3{
+	height: 200rpx;
+	background-color: lightcyan;
+	box-sizing: border-box;
+	border: 1px solid black;
+
+}
+
+.box::-webkit-scrollbar{
+
+}
+
+.scroll-box{
+	height: 300rpx;
+	box-sizing: border-box;
+	border:1px solid black;
+}
+
+.scroll-item{
+	height: 300rpx;
+	box-sizing: border-box;
+	border:1px solid lightcoral;
+}
+
+.scroll-item2{
+	width: 300%;
+	height: 300rpx;
+}
+

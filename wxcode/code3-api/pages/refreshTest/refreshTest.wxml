@@ -1,0 +1,7 @@
+<!--pages/refreshTest/refreshTest.wxml-->
+<text>pages/refreshTest/refreshTest.wxml</text>
+<button bindtap="dealShowRefresh">点击下拉刷新</button>
+
+<view wx:for="{{list}}" wx:key="{{index}}" class="item">
+	第{{index+1}}条内容:{{item}}
+</view>

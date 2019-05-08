@@ -1,0 +1,28 @@
+<!--pages/readDetail/readDetail.wxml-->
+<!-- <text>pages/readDetail/readDetail.wxml</text> -->
+
+<view class="detail">
+	<view class="detail-title">{{item.title}}</view>
+	<view class="detail-author">作者： {{item.author_name}}</view>
+	<!-- <view>{{item.real_content}}</view> -->
+	<rich-text class="detail-content" nodes="{{item.real_content}}"></rich-text>
+</view>
+
+<view class="toolbar">
+	<view >
+		<image bindtap="dealCollect" src="{{isCollect?'/res/img/bubble_collected.png':'/res/img/bubble_collect.png'}}"></image>
+		收藏
+	</view>
+	<view>
+		<image bindtap="dealGood"  src="{{isGood?'/res/img/bubble_liked.png':'/res/img/bubble_like.png'}}"></image>
+		点赞
+	</view>
+	<view>
+		<image bindtap="dealShowCommet" src='/res/img/bottom_comment.png'></image>
+		评论
+	</view>
+	<view>
+		<image src='/res/img/small_08.png'></image>
+		分享
+	</view>
+</view>

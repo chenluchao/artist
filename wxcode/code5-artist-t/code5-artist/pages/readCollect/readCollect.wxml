@@ -1,0 +1,11 @@
+<!--pages/readCollect/readCollect.wxml-->
+<!-- <text>pages/readCollect/readCollect.wxml</text> -->
+
+<view class='read-tableview'>
+	<view wx:for="{{list}}" wx:key="{{index}}" class='read-cell'>
+		<navigator url="{{item.pageName+'?id='+item.id}}">
+			<image src="/res/img/center_reading_collection.png"></image>
+			<text>{{item.title}}</text>
+		</navigator>
+	</view>
+</view>

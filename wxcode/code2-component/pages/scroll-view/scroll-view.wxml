@@ -1,0 +1,42 @@
+<!--pages/scroll-view/scroll-view.wxml-->
+<!-- <text>pages/scroll-view/scroll-view.wxml</text> -->
+
+<view class="box">
+	<view class="s1">
+	
+	</view>
+	<view class="s2">
+	</view>
+	<view class="s3">
+	</view>
+</view>
+
+<scroll-view class="scroll-box" scroll-y="true" scroll-into-view="{{subItemId}}" scroll-with-animation="true">
+	<view class="scroll-item" id="item1">
+	1
+	</view>
+	<view class="scroll-item" id="item2">
+	2
+	</view>
+	<view class="scroll-item" id="item3">
+	3
+	</view>
+	<view class="scroll-item" id="item4">
+	4
+	</view>
+
+</scroll-view>
+<view>
+<button bindtap="dealTap" id="1">1</button>
+<button bindtap="dealTap" id="2">2</button>
+<button bindtap="dealTap" id="3">3</button>
+<button bindtap="dealTap" id="4">4</button>
+</view>
+
+<scroll-view class="scroll-box" scroll-x="true" bindscroll="dealScroll">
+	<view class="scroll-item2">
+		1234234234234234234324234234234323424234214213423
+	</view>
+
+
+</scroll-view>

@@ -1,0 +1,30 @@
+<!--pages/swiper/swiper.wxml-->
+<!-- <text>pages/swiper/swiper.wxml</text> -->
+
+<swiper 
+	autoplay="true" 
+	circular="true" 
+	indicator-dots="true" 
+	indicator-color="rgba(255,0,0,0.5)"
+	indicator-active-color="#03ccbb">
+	<swiper-item>
+		<view class="item-box s1">1</view>
+	</swiper-item>
+
+	<swiper-item>
+		<view class="item-box s2">2</view>
+	</swiper-item>
+
+	<swiper-item>
+		<view class="item-box s3">3</view>
+	</swiper-item>
+
+	<swiper-item>
+		<view class="item-box s4">4</view>
+	</swiper-item>
+</swiper>
+
+<view>
+navigateBack跳转: <navigator  open-type='navigateBack'> Back </navigator>	
+</view>
+

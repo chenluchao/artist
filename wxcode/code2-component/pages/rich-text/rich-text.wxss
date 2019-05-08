@@ -1,0 +1,6 @@
+/* pages/rich-text/rich-text.wxss */
+
+.content-box{
+	color:red;
+	background-color: lightgray;
+}

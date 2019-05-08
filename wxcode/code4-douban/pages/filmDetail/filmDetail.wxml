@@ -1,0 +1,32 @@
+<!--pages/filmDetail/filmDetail.wxml-->
+<view class="page">
+	<view class="top">
+		<view class="imgbox">
+			<image class="img" src="{{item.image?imagePrefix+item.image:''}}"></image>
+		</view>
+		<view class="info">
+			<view class="name">
+				<text class="green">名称 </text>{{item.name}}
+			</view>
+			<view class="author">
+				<text class="green">导演 </text>{{item.director}}
+			</view>
+			<view class="place">
+				<text class="green">主演 </text>{{item.actor}}
+			</view>
+			<view class="price">
+				<text class="green">评分 </text>{{item.rating/10}}
+			</view>
+			<view>
+				<text class="green">上映 </text>{{item.pubdate}}
+			</view>
+		</view>
+	</view>
+	<view class="introduce">
+		<view class="table">电影简介</view>
+		<view class="intro-con">
+			{{item.introduce}}
+		</view>
+	</view>
+	
+</view>

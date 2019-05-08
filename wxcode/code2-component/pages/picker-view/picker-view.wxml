@@ -1,0 +1,38 @@
+<!--pages/picker-view/picker-view.wxml-->
+<text>pages/picker-view/picker-view.wxml</text>
+
+
+<picker-view class="picker-view-box">
+	<picker-view-column>
+		<view>1990</view>
+		<view>1991</view>
+		<view>1992</view>
+	</picker-view-column>
+	<picker-view-column>
+		<view>1月</view>
+		<view>2月</view>
+		<view>3月</view>
+	</picker-view-column>
+	<picker-view-column>
+		<view>1</view>
+		<view>2</view>
+		<view>3</view>
+	</picker-view-column>
+</picker-view>
+
+
+<picker-view class="picker-view-box" bindchange="dealChange">
+	<picker-view-column>
+		<view wx:for="{{years}}" wx:key="{{index}}">{{item}}年</view>
+
+	</picker-view-column>
+	<picker-view-column>
+		<view wx:for="{{months}}" wx:key="{{index}}">{{item}}月</view>
+	</picker-view-column>
+	<picker-view-column>
+		<view wx:for="{{days}}" wx:key="{{index}}">{{item}}日</view>
+	</picker-view-column>
+</picker-view>
+<view>
+当前选择: {{years[index1]}}年 {{months[index2]}}月 {{days[index3]}}日
+</view>

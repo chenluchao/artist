@@ -1,0 +1,16 @@
+<!--pages/book/book.wxml-->
+<!-- <text>pages/book/book.wxml</text> -->
+
+<view class="tableview">
+
+	<view class="item" wx:for="{{list}}" wx:key="{{index}}">
+		<navigator url="/pages/bookDetail/bookDetail?id={{item.id}}">
+			<image class="img" src="{{imagePrefix+item.image}}"></image>
+			<text class="name">{{item.name}}</text>
+			<text class="author">作者: {{item.author}}</text>
+			<text class="publisher">出版商: {{item.publisher}}</text>
+			<text class="price">价格: <text class="price-num">{{item.price}}</text></text>
+		</navigator>
+	</view>
+
+</view>

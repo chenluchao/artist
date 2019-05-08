@@ -1,0 +1,9 @@
+<!--pages/clc_listDetail/clc_listDetail.wxml-->
+<view class="page">
+	<view class="top">
+		<image src="{{item.image}}"></image>
+		<view class="name">{{item.image_source}}</view>
+		<view class="title">{{item.title}}</view>
+	</view>
+	<rich-text class="detail-content" nodes="{{item.body}}"></rich-text>
+</view>

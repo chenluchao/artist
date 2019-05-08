@@ -1,0 +1,20 @@
+<!--pages/login/login.wxml-->
+<!-- <text>pages/login/login.wxml</text> -->
+
+<view class="page">
+	<view class="input-area">
+		<input class="input-item" value="{{username}}" bindinput="dealInput" id="username" placeholder='请输入用户名'></input>
+		<input class="input-item" value="{{password}}" bindinput="dealInput" id="password" placeholder='请输入密码' password='true'></input>
+		<button class="button-item"  bindtap="dealLogin">登录</button>
+	</view>
+
+	<view class="link-area">
+		<view>
+			<navigator url="/pages/reg/reg">
+				免费注册
+			</navigator>
+		</view>
+		<view>忘记密码</view>
+	</view>
+
+</view>

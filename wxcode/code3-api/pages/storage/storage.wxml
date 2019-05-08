@@ -1,0 +1,10 @@
+<!--pages/storage/storage.wxml-->
+<text>pages/storage/storage.wxml</text>
+
+
+<view>
+<button bindtap="dealSetStorage">存储值</button>
+<button bindtap="dealGetStorage">获取值</button>
+<button bindtap="dealRemoveStorage">移除值</button>
+<button bindtap="dealClearStorage">清除所有值</button>
+</view>

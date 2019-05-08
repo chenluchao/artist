@@ -1,0 +1,19 @@
+<!--pages/music/music.wxml-->
+
+
+<view class='tableview'>
+	<view wx:for="{{list}}" wx:key="{{index}}" class='cell'>
+		<navigator url="{{item.pageName+'?id='+item.id}}">
+			<view class="category">- {{item.categoryName}} -</view>
+			<view class="title">{{item.title}}</view>
+			<view class="author">作者： {{item.author_name}}</view>
+			<view class="img-box">
+				<image src="{{imagePrefix+item.img_url}}"></image>
+			</view>
+			<view class="forward">{{item.forward}}</view>
+			<view class="info">更新时间 {{item.post_date}} 收藏 {{item.like_count}}</view>
+		</navigator>
+	</view>
+</view>
+
+

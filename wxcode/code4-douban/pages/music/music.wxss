@@ -1,0 +1,82 @@
+/* pages/music/music.wxss */
+.page{
+	background-color: #fafbfb;
+}
+.item{
+	background-color: #fff;
+	width: 100%;
+	height: 320rpx;
+	border-bottom: 1rpx solid #ccc;
+	border-top: 1rpx solid #ccc;
+}
+.item:nth-of-type(n+2){
+	margin-top: 20rpx;
+}
+.img{
+	width: 164rpx;
+	height: 164rpx;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: 10rpx 0 10rpx 40%;
+}
+.img image{
+	width: 100%;
+	height: 100%;
+}
+.info{
+	display: flex;
+	font-size: 28rpx;
+	padding-left: 20rpx;
+	box-sizing: border-box;
+}
+.left,.right{
+	width: 50%;
+	overflow: hidden;
+}
+.green{
+	color: #007722;
+}
+.gobut{
+	margin-top: 10rpx;
+	margin-left: 42%;
+	width: 120rpx;
+	height: 50rpx;
+	background-color: #66ba9c;
+	border-radius: 5rpx;
+	overflow: hidden;
+	text-align: center;
+	line-height: 50rpx;
+}
+.gobut navigator{
+	color: #fff;
+	font-weight: bold;
+	font-size: 30rpx;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.search{
+	position: relative;
+	width: 735rpx;
+	height: 72rpx;
+	margin-left: 10rpx;
+	border: 1rpx solid #ccc;
+	box-sizing: border-box;
+}
+.search input{
+	width: 630rpx;
+	height: 70rpx;
+}
+.search view{
+	position: absolute;
+	right: 0;
+	top: -1rpx;
+	width: 100rpx;
+	text-align: center;
+	line-height: 68rpx;
+	height: 71rpx;
+	font-size: 30rpx;
+	color: #fff;
+	background-color: #0091ff;
+}

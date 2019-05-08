@@ -1,0 +1,7 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+
+<view>
+  <!-- 以下是对一个自定义组件的引用 -->
+  <component-tag-name class="compon" inner-text="自定义组件测试"></component-tag-name>
+</view>

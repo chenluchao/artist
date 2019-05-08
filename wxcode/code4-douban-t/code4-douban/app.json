@@ -1,0 +1,41 @@
+{
+  "pages":[
+	"pages/book/book",
+	"pages/bookDetail/bookDetail",
+	"pages/music/music",
+	"pages/musicDetail/musicDetail",
+	"pages/film/film",
+	"pages/filmDetail/filmDetail",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "tabBar":{
+	  "selectedColor":"#33cc66",
+	  "list":[
+		  {
+			  "pagePath":"pages/book/book",
+			  "text":"图书",
+			  "iconPath":"/res/tab/ic_tab_home_normal.png",
+			  "selectedIconPath":"/res/tab/ic_tab_home_active.png"
+		  },
+		{
+			"pagePath": "pages/music/music",
+			"text": "音乐",
+			"iconPath": "/res/tab/ic_tab_status_normal.png",
+			"selectedIconPath": "/res/tab/ic_tab_status_active.png"
+		},
+		{
+			"pagePath": "pages/film/film",
+			"text": "电影",
+			"iconPath": "/res/tab/ic_tab_subject_normal.png",
+			"selectedIconPath": "/res/tab/ic_tab_subject_active.png"
+		}
+	  ]
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

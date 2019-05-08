@@ -1,0 +1,4 @@
+<!--pages/phone/phone.wxml-->
+<text>pages/phone/phone.wxml</text>
+
+<button bindtap="makePhone">打电话</button>

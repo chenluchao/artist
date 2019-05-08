@@ -1,0 +1,5 @@
+/* pages/picker-view/picker-view.wxss */
+
+.picker-view-box{
+	height: 300rpx;
+}

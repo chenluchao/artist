@@ -1,0 +1,15 @@
+<!--pages/scanCode/scanCode.wxml-->
+<text>pages/scanCode/scanCode.wxml</text>
+
+<button bindtap='dealScan'>扫码</button>
+
+<view>
+结果
+<view>
+内容: {{result}}
+</view>
+<view>
+类型: {{scanType}}
+</view>
+
+</view>

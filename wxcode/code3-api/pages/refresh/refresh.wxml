@@ -1,0 +1,12 @@
+<!--pages/refresh/refresh.wxml-->
+<!-- <text>pages/refresh/refresh.wxml</text> -->
+
+<view>
+
+	<button bindtap="dealShowRefresh">代码触发下拉刷新</button>
+
+	<view wx:for="{{list}}" wx:key="{{index}}" class="item">
+		{{index+1}} - {{item}}
+	</view>
+
+</view>

@@ -1,0 +1,20 @@
+/* pages/refresh/refresh.wxss */
+
+
+.item{
+	height: 500rpx;
+	box-sizing: border-box;
+	border: 1px solid black;
+
+	font-size: 64px;
+	line-height: 500rpx;
+	padding-left: 100rpx;
+}
+
+.item:nth-child(odd){
+	background-color: lightblue;
+}
+
+.item:nth-child(even){
+	background-color: lightcoral;
+}

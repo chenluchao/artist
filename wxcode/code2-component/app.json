@@ -1,0 +1,51 @@
+{
+  "pages":[
+    "pages/homework/homework",
+		"pages/video/video",
+    "pages/canvas/canvas",
+		"pages/map/map",
+		
+		"pages/image/image",
+   "pages/textarea/textarea",
+		"pages/switch/switch",
+		"pages/checkbox/checkbox",
+		"pages/picker-view/picker-view",
+		"pages/picker/picker",
+		
+		"pages/progress/progress", 
+		
+	"pages/rich-text/rich-text",
+	"pages/icon/icon",
+	"pages/swiper/swiper",
+  "pages/scroll-view/scroll-view",
+  "pages/navigator/navigator",
+
+	"pages/component/component",
+	"pages/test/test",
+	
+	"pages/view/view",
+    "pages/index/index",
+    "pages/logs/logs",
+
+	"pages/tabbar/tab1",
+	"pages/tabbar/tab2"
+  ],
+  "tabBar": {
+	"list": [
+		{
+			"pagePath": "pages/tabbar/tab1",
+			"text": "A"
+		},
+		{
+			"pagePath": "pages/tabbar/tab2",
+			"text": "B"
+		}
+	]
+},
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#292929",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white"
+  }
+}

@@ -1,0 +1,46 @@
+<!--pages/music/music.wxml-->
+<view class="page">
+	<!-- 搜索功能区域 -->
+	<view class="search">
+		<input bindinput="dealChange" value="{{keyword}}" type="text" placeholder="请输入关键字"/>
+		<view bindtap="dealSearch">搜索</view>
+	</view>
+	<!-- 搜索结果显示 -->
+	<view wx:if="{{keyword!=''}}" class="item" wx:for="{{show}}" wx:key="{{index}}">
+		<view class="img">
+			<image src="{{imgUrl+item.image}}"></image>
+		</view>
+		<view class="info">
+			<view class="left">
+				<view class="name"><text class="green">曲目 </text>{{item.name}}</view>
+				<view class="author"><text class="green">演唱 </text>{{item.artist}}</view>
+			</view>
+			<view class="right">
+				<view class="time"><text class="green">时间 </text>{{item.pubdate}}</view>
+				<view class="grade"><text class="green">评分 </text>{{item.rating/10}}</view>
+			</view>
+		</view>
+		<view class="gobut">
+			<navigator hover-class="none" url="/pages/musicDetail/musicDetail?id={{item.id}}">详情</navigator>
+		</view>
+	</view>
+	<!-- 列表显示 -->
+	<view wx:if="{{keyword==''}}" class="item" wx:for="{{list}}" wx:key="{{index}}">
+		<view class="img">
+			<image src="{{imgUrl+item.image}}"></image>
+		</view>
+		<view class="info">
+			<view class="left">
+				<view class="name"><text class="green">曲目 </text>{{item.name}}</view>
+				<view class="author"><text class="green">演唱 </text>{{item.artist}}</view>
+			</view>
+			<view class="right">
+				<view class="time"><text class="green">时间 </text>{{item.pubdate}}</view>
+				<view class="grade"><text class="green">评分 </text>{{item.rating/10}}</view>
+			</view>
+		</view>
+		<view class="gobut">
+			<navigator hover-class="none" url="/pages/musicDetail/musicDetail?id={{item.id}}">详情</navigator>
+		</view>
+	</view>
+</view>

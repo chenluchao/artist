@@ -1,0 +1,18 @@
+<!--pages/checkbox/checkbox.wxml-->
+<text>pages/checkbox/checkbox.wxml</text>
+
+<view>
+
+	<checkbox-group bindchange="dealCheckBoxChange">
+		<checkbox value="lang">浪</checkbox>
+		<checkbox value="wine">酒</checkbox>
+		<checkbox value="gosky" checked='true'>上天</checkbox>
+	</checkbox-group>
+
+	<radio-group class="radio-group" bindchange="radioChange">
+		<label class="radio" wx:for="{{items}}">
+			<radio value="{{item.name}}" checked="{{item.checked}}" />
+			{{item.value}}
+		</label>
+	</radio-group>
+</view>

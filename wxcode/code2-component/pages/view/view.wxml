@@ -1,0 +1,10 @@
+<!--pages/view/view.wxml-->
+<!-- <text>pages/view/view.wxml</text> -->
+
+<view class="box">
+	<view class="s1">
+	
+	</view>
+	<view class="s2">
+	</view>
+</view>

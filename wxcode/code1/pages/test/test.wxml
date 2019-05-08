@@ -1,0 +1,13 @@
+<!--pages/test/test.wxml-->
+<text>pages/test/test.wxml</text>
+
+<view>
+	数据1： <input value="{{v1}}" bindinput="dealInput" id="v1"></input>
+	数据2： <input value="{{v2}}" bindinput="dealInput" id="v2"></input>
+</view>
+<view>
+	<button bindtap="dealAdd">计算</button>
+</view>
+<view>
+结果: <text>{{r}}</text>
+</view>

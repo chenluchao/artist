@@ -1,0 +1,45 @@
+/* pages/readDetail/readDetail.wxss */
+
+.detail{
+	padding: 10px;
+	padding-bottom: 50px;
+}
+
+.detail-title{
+	padding: 10px;
+	font-size: 22px;
+}
+
+.detail-author{
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 14px;
+	color: #999;
+}
+
+.detail-content{
+	color: #333;
+}
+
+/* toolbar */
+
+.toolbar{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	border-top: 1px solid #ccc;
+	background-color: #ececec;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	vertical-align: middle;
+}
+.toolbar image{
+	width: 30px;
+	height: 30px;
+	vertical-align: middle;
+}

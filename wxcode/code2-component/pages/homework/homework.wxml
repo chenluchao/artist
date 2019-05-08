@@ -1,0 +1,39 @@
+<!--pages/homework/homework.wxml-->
+<view class="page">
+	<view class="nav">
+		<view class="navimg">
+			<image src="images/nav.png"></image>
+		</view>
+		<view class="more">
+			<text>更多</text>
+		</view>
+	</view>
+	<view class="con">
+		<swiper class="swiperbox" indicator-active-color="#fff" autoplay="true" indicator-dots="true" circular="true" bindanimationfinish="animationfinish">
+			<swiper-item wx:for="{{imgList}}" wx:key="{{index}}">
+				<image src="{{item.img}}" class="slide-image" />
+			</swiper-item>
+		</swiper>
+		<view class="imgtitle">
+			<view class="imgtitlecon line-ellipsis">{{imgList[current].title}}</view>
+		</view>
+	</view>
+	<view class="list">
+		<view wx:for="{{list}}" wx:key="{{index}}" class="item-box">
+			<view class="imgbox">
+				<image src="{{item.img}}"></image>
+			</view>
+			<view class="conbox">
+				<view class="title line-ellipsis">
+					{{item.title}}
+				</view>
+				<view class="price line-ellipsis">
+					{{item.price}}
+				</view>
+				<view class="info line-ellipsis">
+					{{item.info}}
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

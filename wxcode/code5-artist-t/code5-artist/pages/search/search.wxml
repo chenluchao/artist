@@ -1,0 +1,22 @@
+<!--pages/search/search.wxml-->
+<!-- <text>pages/search/search.wxml</text> -->
+
+<view class="page">
+	<view class="search-area">
+		<input class="keyword" value="{{keyword}}" bindinput="dealInput" id="keyword" placeholder='请输入关键字'></input>
+		<button class="search"  bindtap="dealSearch">搜索</button>
+	</view>
+
+	<view class="result">
+		<view class="result-title">搜索结果</view>
+		<view class="search-tableview">
+			<view wx:for="{{list}}"  wx:key="{{index}}" class="search-item">
+				<navigator url="{{item.pageName+'?id='+item.id}}">
+					<image class="search-item-img" src="{{imagePrefix+item.img_url}}"></image>
+					<view class="search-item-title">{{item.title}}</view>
+					<view class="search-item-forward">{{item.forward}}</view>
+				</navigator>
+			</view>
+		</view>
+	</view>
+</view>

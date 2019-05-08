@@ -1,0 +1,16 @@
+<!--pages/interaction/interaction.wxml-->
+<text>pages/interaction/interaction.wxml</text>
+
+
+<view>
+<button bindtap="dealShowToast">消息提示框</button>
+</view>
+
+<view>
+<button bindtap="dealShowModal">模态框</button>
+</view>
+
+<view>
+<button bindtap="dealShowLoading">显示下载中</button>
+<button bindtap="dealHideLoading">关闭下载中</button>
+</view>

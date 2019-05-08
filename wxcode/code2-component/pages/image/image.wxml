@@ -1,0 +1,6 @@
+<!--pages/image/image.wxml-->
+<text>pages/image/image.wxml</text>
+
+<view class="img-box">
+	<image class="img" src="/res/timg.jpeg" mode='center'></image>
+</view>

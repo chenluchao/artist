@@ -1,0 +1,15 @@
+<!--pages/navigator/navigator.wxml-->
+<text>pages/navigator/navigator.wxml</text>
+
+<view>
+页面跳转
+</view>
+
+<view>
+	普通跳转: <navigator url="../swiper/swiper" open-type='navigate'> Swiper </navigator>	
+</view>
+
+<view>
+	redirect跳转: <navigator url="/pages/swiper/swiper" open-type='redirect'> Swiper </navigator>	
+</view>
+

@@ -1,0 +1,60 @@
+<!--pages/film/film.wxml-->
+<view class="page">
+	<!-- 搜索 -->
+	<view class="search">
+		<input bindinput="dealChange" value="{{keyword}}" type="text" placeholder="请输入关键字"/>
+		<view bindtap="dealSearch">搜索</view>
+	</view>
+	<!-- 搜索结果显示 -->
+	<view wx:if="{{keyword!=''}}" class="item" wx:for="{{show}}" wx:key="{{index}}">
+		<view class="img">
+			<image src="{{imgUrl+item.image}}"></image>
+		</view>
+		<view class="info">
+			<view>
+				<text class="green">名称 </text>{{item.name}}
+			</view>
+			<view>
+				<text class="green">导演 </text>{{item.director}}
+			</view>
+			<view>
+				<text class="green">主演 </text>{{item.actor}}
+			</view>
+			<view>
+				<text class="green">评分 </text>{{item.rating/10}}
+			</view>
+			<view>
+				<text class="green">上映 </text>{{item.pubdate}}
+			</view>
+			<view class="gobut">
+				<navigator hover-class="none" url="/pages/filmDetail/filmDetail?id={{item.id}}">详情</navigator>
+			</view>
+		</view>
+	</view>
+	<!-- 列表显示 -->
+	<view wx:if="{{keyword==''}}" class="item" wx:for="{{list}}" wx:key="{{index}}">
+		<view class="img">
+			<image src="{{imgUrl+item.image}}"></image>
+		</view>
+		<view class="info">
+			<view>
+				<text class="green">名称 </text>{{item.name}}
+			</view>
+			<view>
+				<text class="green">导演 </text>{{item.director}}
+			</view>
+			<view>
+				<text class="green">主演 </text>{{item.actor}}
+			</view>
+			<view>
+				<text class="green">评分 </text>{{item.rating/10}}
+			</view>
+			<view>
+				<text class="green">上映 </text>{{item.pubdate}}
+			</view>
+			<view class="gobut">
+				<navigator hover-class="none" url="/pages/filmDetail/filmDetail?id={{item.id}}">详情</navigator>
+			</view>
+		</view>
+	</view>
+</view>

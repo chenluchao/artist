@@ -1,0 +1,6 @@
+{
+  "usingComponents": {},
+	"navigationBarTitleText": "陈鲁超-主页",
+	"enablePullDownRefresh":true,
+	"backgroundTextStyle":"dark"
+}

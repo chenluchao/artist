@@ -1,0 +1,20 @@
+<!--pages/userInfo/userInfo.wxml-->
+<!-- <text>pages/userInfo/userInfo.wxml</text> -->
+
+<view class='tableview-title'>
+	基本资料
+</view>
+<view class='tableview'>
+	<view class="cell head-image-cell" bindtap="dealShowSelectImageBox">
+		<text class='head-text'>头像</text>
+		<image class='head-image' src="{{imagePrefix+headImage}}"></image>
+	</view>
+</view>
+
+<view class='select-image-box' wx:if="{{isShowSelectImageBox}}">
+	<view>
+		<image src="{{selectHeadImage}}"></image>
+	</view>
+	<button bindtap="dealChooseImage">选择图片</button>
+	<button bindtap="dealUploadImage">上传图片</button>
+</view>

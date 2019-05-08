@@ -1,0 +1,56 @@
+<!--pages/book/book.wxml-->
+<view class="page">
+	<!-- 搜索 -->
+	<view class="search">
+		<input bindinput="dealChange" value="{{keyword}}" type="text" placeholder="请输入关键字"/>
+		<view bindtap="dealSearch">搜索</view>
+	</view>
+	<!-- 搜索结果显示 -->
+	<view class="item" wx:if="{{keyword!=''}}" wx:for="{{show}}" wx:key="{{index}}">
+		<navigator hover-class="none" url="/pages/bookDetail/bookDetail?id={{item.id}}">
+			<view class="box">
+				<view class="img">
+					<image src="{{bookimg+item.image}}"></image>
+				</view>
+				<view class="infobox">
+					<view class="name">
+						{{item.name}}
+					</view>
+					<view class="author">
+						作者:{{item.author}}
+					</view>
+					<view class="publister">
+						出版社:{{item.publisher}}
+					</view>
+					<view class="price">
+						价格:<text>¥{{item.price}}</text>
+					</view>
+				</view>
+			</view>
+		</navigator>
+	</view>
+	<!-- 列表显示 -->
+	<view class="item" wx:if="{{keyword==''}}" wx:for="{{bookList}}" wx:key="{{index}}">
+		<navigator hover-class="none" url="/pages/bookDetail/bookDetail?id={{item.id}}">
+			<view class="box">
+				<view class="img">
+					<image src="{{bookimg+item.image}}"></image>
+				</view>
+				<view class="infobox">
+					<view class="name">
+						{{item.name}}
+					</view>
+					<view class="author">
+						作者:{{item.author}}
+					</view>
+					<view class="publister">
+						出版社:{{item.publisher}}
+					</view>
+					<view class="price">
+						价格:<text>¥{{item.price}}</text>
+					</view>
+				</view>
+			</view>
+		</navigator>
+	</view>
+</view>
